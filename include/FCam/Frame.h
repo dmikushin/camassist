@@ -4,9 +4,9 @@
 /** \file 
  * A frame is the data returned by the sensor as a result of a \ref FCam::Shot. */
 
-#include <tr1/unordered_map>
-#include <tr1/memory>
-using std::tr1::shared_ptr;
+#include <unordered_map>
+#include <memory>
+using std::shared_ptr;
 
 #include "Base.h"
 #include "Device.h"
@@ -24,7 +24,7 @@ namespace FCam {
 
     /** A TagMap is a dictionary mapping strings to \ref TagValue
      * "TagValues" */
-    typedef std::tr1::unordered_map<std::string, TagValue> TagMap;
+    typedef std::unordered_map<std::string, TagValue> TagMap;
 
     /** A struct containing the data that makes up a \ref Frame.  You
      * should not instantiate a _Frame, unless you're making dummy

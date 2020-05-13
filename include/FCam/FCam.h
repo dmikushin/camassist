@@ -20,10 +20,10 @@
 #include "Shot.h"
 #include "Time.h"
 
-#include "processing/DNG.h"
-#include "processing/Demosaic.h"
-#include "processing/Dump.h"
-#include "processing/JPEG.h"
+#include "DNG.h"
+#include "Demosaic.h"
+#include "Dump.h"
+#include "JPEG.h"
 
 namespace FCam {
 
@@ -232,10 +232,6 @@ namespace FCam {
  * 
  * \image html n900.jpg
  *
- * <H2> NVIDIA Tegra 3 </H2>
- *
- * \ref FCam::Tegra
- *
  * <HR><H1> Other Useful Features </H1>
  *
  * <H2> Events </H2>
@@ -335,7 +331,6 @@ namespace FCam {
 
  /** \page Changes
   * <H2>July 2011</H2>
-  * - Added support for NVIDIA Tegra. See the Tegra documentation for more details.
   * - Added Lens::FocusSteppingAction to do focus stepping while streaming.
   * - Added Viewfinder device to act as a viewfinder.
   * - Added ColorSpace member to the Histogram class to indicate which colorspace the channels represent.
@@ -346,7 +341,7 @@ namespace FCam {
 /** Main namespace for the API.
  *
  * FCam is the main namespace for the API.
- * There are sub-namespaces for each platform, currently four: N900, F2, Tegra, and Dummy
+ * There are sub-namespaces for each platform, currently four: N900, F2, and Dummy
  */
 namespace FCam {
 }

@@ -50,7 +50,6 @@ namespace FCam {
               F2LensInstalled,         //!< A new lens was inserted in the F2
               F2ZoomChanged,           //!< The lens on the F2 was manually zoomed
               F2FocusChanged,          //!< The lens on the F2 was manually focused
-              TegraModeChange = 30000, //!< A mode change has occurred.
         };
 
         /** The list of builtin error and warning codes

@@ -11,8 +11,6 @@
 
 #include "Base.h"
 
-//#include "../../src/Debug.h"
-
 /** \file 
  * A basic thread-safe queue using pthread mutexes to wrap a
  * C++ STL queue. Convenient to use for devices, etc, if they need a
@@ -246,9 +244,8 @@ namespace FCam {
 
     template<typename T>
     const T& TSQueue<T>::front() const{
-        const T &val;
         pthread_mutex_lock(&mutex);
-        val = q.front();
+        const T &val = q.front();
         pthread_mutex_unlock(&mutex);
         return val;
     }
@@ -263,9 +260,8 @@ namespace FCam {
 
     template<typename T>
     const T& TSQueue<T>::back() const {
-        const T &val;
         pthread_mutex_lock(&mutex);
-        val = q.back();
+        const T &val = q.back();
         pthread_mutex_unlock(&mutex);
         return val;
     }
