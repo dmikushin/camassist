@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(camassist)
+project(fcam)
 
 file(GLOB SRCS "src/*.cpp" "include/*.h")
 
